@@ -34,7 +34,7 @@ pnpm build
 
 ## 빌드를 위한 설정
 
-### GitHub Pages 이름
+### GitHub Pages 이름 (필수)
 
 GitHib 페이지는 계정의 저장소 이름을 사용하므로 [package.json](./package.json) 파일에 `name` 값을 배포할 저장소 이름으로 설정합니다.
 
