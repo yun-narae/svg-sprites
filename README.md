@@ -59,7 +59,7 @@ const OUTPUT = './example/icons';
 const FILENAME = 'stack';
 
 // GitHub 저장소 서브 디렉토리 이름
-const BASE = packageInfo.base;
+const BASE = packageInfo.name;
 
 // 미리보기(preview) 생성 여부
 const MAKE_PREVIEW = true;
