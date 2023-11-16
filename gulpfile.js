@@ -41,14 +41,14 @@ function copyIcons() {
 
 function replaceHTML() {
   return src(['example/index.html'])
-    .pipe(replace(/="\/{1}/g, `="/${BASE}/`))
+    .pipe(replace(/=("|')\/(?!\/)/g, `="/${BASE}/`))
     .pipe(dest('docs'))
     .pipe(gulpif(MAKE_PREVIEW, dest(`preview/${BASE}`)));
 }
 
 function replaceCSS() {
   return src(['example/style.css'])
-    .pipe(replace(/url\('\//g, `url('/${BASE}/`))
+    .pipe(replace(/url\('\/(?!(\/))/g, `url('/${BASE}/`))
     .pipe(dest('docs'))
     .pipe(gulpif(MAKE_PREVIEW, dest(`preview/${BASE}`)));
 }
