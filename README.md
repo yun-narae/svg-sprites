@@ -36,7 +36,7 @@ pnpm build
 
 ### GitHub Pages 이름
 
-GitHib 페이지는 사용자 계정의 하위 저장소 이름을 사용하므로 [package.json](./package.json) 파일에 base 값을 배포할 저장소 이름으로 설정합니다.
+GitHib 페이지는 계정의 저장소 이름을 사용하므로 [package.json](./package.json) 파일에 `base` 값을 배포할 저장소 이름으로 설정합니다.
 
 ```json
 {
