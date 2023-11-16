@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <title>SVG 스프라이트 이미지 (with 스택)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SVG 스택 방식의 스프라이트 이미지 활용 데모입니다." />
+  <link rel="icon" href="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-icon.svg" />
+  <link rel="stylesheet" href="/svg-sprites-stack/style.css" />
+</head>
+<body>
+  
+  <h2>스택 + SVG 마크업 → 크기 조정 가능 (색상 조정하려면 SVG 파일의 fill 값을 currentColor로 변경해야 함)</h2>
+  <div class="stack" style="--size: 32px; --color: #ef5351">
+    <svg role="img" aria-label="체크" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#checkmark" />
+    </svg>
+    <svg role="img" aria-label="체크 안됨" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#un-check" />
+    </svg>
+    <svg role="img" aria-label="체크 됨" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#checked" />
+    </svg>
+    <svg role="img" aria-label="감춤" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#invisible" />
+    </svg>
+    <svg role="img" aria-label="표시" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#visible" />
+    </svg>
+    <svg role="img" aria-label="경고" class="svg-icon">
+      <use href="/svg-sprites-stack/icons/stack.svg#warning" />
+    </svg>
+  </div>
+
+  <h2>스택 + CSS 배경 이미지 → 크기 조정 가능</h2>
+  <div class="stack" style="--size: 32px; --color: #ef5351">
+    <button type="button" class="sprite--checkmark" aria-label="체크"></button>
+    <button type="button" class="sprite--un-check" aria-label="체크 안됨"></button>
+    <button type="button" class="sprite--checked" aria-label="체크 됨"></button>
+    <button type="button" class="sprite--invisible" aria-label="감춤"></button>
+    <button type="button" class="sprite--visible" aria-label="표시"></button>
+    <button type="button" class="sprite--warning" aria-label="경고"></button>
+  </div>
+  
+  <h2>스택 + 마스크 → 크기, 색상 조정 가능</h2>
+  <div class="stack" style="--size: 32px; --color: #ef5351">
+    <button type="button" class="mask--checkmark" aria-label="체크"></button>
+    <button type="button" class="mask--un-check" aria-label="체크 안됨" style="--color: #0a7ea4"></button>
+    <button type="button" class="mask--checked" aria-label="체크 됨"></button>
+    <button type="button" class="mask--invisible" aria-label="감춤" style="--color: #444445"></button>
+    <button type="button" class="mask--visible" aria-label="표시"></button>
+    <button type="button" class="mask--warning" aria-label="경고" style="--color: #9dcbdb"></button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  margin: 40px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+button {
+  all: unset;
+}
+
+.stack {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* <svg> → <use> 마크업 -------------------------------------------------------- */
+
+.svg-icon {
+  inline-size: 1em;
+  block-size: 1em;
+  font-size: var(--size, 1em);
+  color: var(--color, inherit);
+}
+
+/* CSS 배경 ------------------------------------------------------------------- */
+
+[class*="sprite"] {
+  inline-size: var(--size, 24px);
+  block-size: var(--size, 24px);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: var(--size, 24px);
+}
+
+.sprite--checked { background-image: url('/svg-sprites-stack/icons/stack.svg#checked'); }
+.sprite--checkmark { background-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); }
+.sprite--visible { background-image: url('/svg-sprites-stack/icons/stack.svg#visible'); }
+.sprite--invisible { background-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); }
+.sprite--un-check { background-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); }
+.sprite--warning { background-image: url('/svg-sprites-stack/icons/stack.svg#warning'); }
+
+/* 마스크 ---------------------------------------------------------------------- */
+
+[class*="mask"] {
+  /* 아이콘 색상 변경 가능 */
+  background-color: var(--color, #000);
+
+  inline-size: var(--size, 24px);
+  block-size: var(--size, 24px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: var(--size, 24px);
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: var(--size, 24px);
+  mask-size: var(--size, 24px);
+}
+
+.mask--checked { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#checked'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#checked'); 
+}
+.mask--checkmark { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); 
+}
+.mask--visible { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#visible'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#visible'); 
+}
+.mask--invisible { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); 
+}
+.mask--un-check { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); 
+}
+.mask--warning { 
+  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#warning'); 
+  mask-image: url('/svg-sprites-stack/icons/stack.svg#warning'); 
+}

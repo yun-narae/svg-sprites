@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "base": "svg-sprites-stack",
+  "name": "svg-sprites-stack",
+  "description": "SVG 스프라이트 스택 데모",
+  "scripts": {
+    "svg": "gulp makeSvgSprites",
+    "dev": "serve example",
+    "build": "gulp build",
+    "preview": "serve preview",
+    "clean": "rm -rf docs preview"
+  },
+  "devDependencies": {
+    "gulp": "4.0.2",
+    "gulp-cli": "2.3.0",
+    "gulp-if": "3.0.0",
+    "gulp-replace": "1.1.4",
+    "gulp-stacksvg": "3.0.0",
+    "serve": "14.2.1"
+  }
+}
