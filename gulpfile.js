@@ -46,21 +46,21 @@ export const svg = makeSvgSprites;
 function copyIcons() {
   return src(['example/icons/**/*'])
     .pipe(dest('docs/icons'))
-    .pipe(gulpif(MAKE_PREVIEW, dest(`preview/${BASE}/icons`)));
+    .pipe(gulpif(MAKE_PREVIEW, dest(`preview/icons`)));
 }
 
 function replaceHTML() {
   return src(['example/index.html'])
-    .pipe(replace(/=("|')\/(?!\/)/g, `="/${BASE}/`))
+    .pipe(replace(/=("|')\/(?!\/)/g, `="/`))
     .pipe(dest('docs'))
-    .pipe(gulpif(MAKE_PREVIEW, dest(`preview/${BASE}`)));
+    .pipe(gulpif(MAKE_PREVIEW, dest(`preview`)));
 }
 
 function replaceCSS() {
   return src(['example/style.css'])
-    .pipe(replace(/url\(('|")\/(?!(\/))/g, `url('/${BASE}/`))
+    // .pipe(replace(/url\(('|")\/(?!(\/))/g, `url('/${BASE}/`))
     .pipe(dest('docs'))
-    .pipe(gulpif(MAKE_PREVIEW, dest(`preview/${BASE}`)));
+    .pipe(gulpif(MAKE_PREVIEW, dest(`preview`)));
 }
 
 export const build = parallel(copyIcons, replaceHTML, replaceCSS);

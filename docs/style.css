@@ -36,12 +36,12 @@ button {
   background-size: var(--size, 24px);
 }
 
-.sprite--checked { background-image: url('/svg-sprites-stack/icons/stack.svg#checked'); }
-.sprite--checkmark { background-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); }
-.sprite--visible { background-image: url('/svg-sprites-stack/icons/stack.svg#visible'); }
-.sprite--invisible { background-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); }
-.sprite--un-check { background-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); }
-.sprite--warning { background-image: url('/svg-sprites-stack/icons/stack.svg#warning'); }
+.sprite--checked { background-image: url('/icons/stack.svg#checked'); }
+.sprite--checkmark { background-image: url('/icons/stack.svg#checkmark'); }
+.sprite--visible { background-image: url('/icons/stack.svg#visible'); }
+.sprite--invisible { background-image: url('/icons/stack.svg#invisible'); }
+.sprite--un-check { background-image: url('/icons/stack.svg#un-check'); }
+.sprite--warning { background-image: url('/icons/stack.svg#warning'); }
 
 /* 마스크 ---------------------------------------------------------------------- */
 
@@ -64,26 +64,26 @@ button {
 }
 
 .mask--checked { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#checked'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#checked'); 
+  -webkit-mask-image: url('/icons/stack.svg#checked'); 
+  mask-image: url('/icons/stack.svg#checked'); 
 }
 .mask--checkmark { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#checkmark'); 
+  -webkit-mask-image: url('/icons/stack.svg#checkmark'); 
+  mask-image: url('/icons/stack.svg#checkmark'); 
 }
 .mask--visible { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#visible'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#visible'); 
+  -webkit-mask-image: url('/icons/stack.svg#visible'); 
+  mask-image: url('/icons/stack.svg#visible'); 
 }
 .mask--invisible { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#invisible'); 
+  -webkit-mask-image: url('/icons/stack.svg#invisible'); 
+  mask-image: url('/icons/stack.svg#invisible'); 
 }
 .mask--un-check { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#un-check'); 
+  -webkit-mask-image: url('/icons/stack.svg#un-check'); 
+  mask-image: url('/icons/stack.svg#un-check'); 
 }
 .mask--warning { 
-  -webkit-mask-image: url('/svg-sprites-stack/icons/stack.svg#warning'); 
-  mask-image: url('/svg-sprites-stack/icons/stack.svg#warning'); 
+  -webkit-mask-image: url('/icons/stack.svg#warning'); 
+  mask-image: url('/icons/stack.svg#warning'); 
 }

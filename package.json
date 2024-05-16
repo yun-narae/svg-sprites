@@ -8,7 +8,8 @@
     "build": "gulp build",
     "dev": "five-server example --port=3000",
     "preview": "five-server preview --port=3100",
-    "clean": "rm -rf docs preview"
+    "clean": "rm -rf docs preview",
+    "docs": "five-server docs --port=3200"
   },
   "devDependencies": {
     "five-server": "0.3.1",
