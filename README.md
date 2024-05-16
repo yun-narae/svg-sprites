@@ -26,7 +26,7 @@ npm run dev
 
 ## 배포를 위한 빌드
 
-GitHub Pages 배포를 위한 빌드 명령을 실행하면 docs 폴더가 빌드됩니다.
+배포를 위한 빌드 명령을 실행하면 docs 폴더가 빌드됩니다.
 
 ```sh
 npm run build
