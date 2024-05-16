@@ -58,7 +58,6 @@ function replaceHTML() {
 
 function replaceCSS() {
   return src(['example/style.css'])
-    // .pipe(replace(/url\(('|")\/(?!(\/))/g, `url('/${BASE}/`))
     .pipe(dest('docs'))
     .pipe(gulpif(MAKE_PREVIEW, dest(`preview`)));
 }
